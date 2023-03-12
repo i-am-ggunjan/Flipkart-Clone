@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <header class="bg-blue-600 px-[12vw] py-[5px] fixed w-[100vw]">
+    <header class="bg-blue-600 px-[12vw] py-[5px] fixed w-[100vw] max-lg:pb-[15px]">
         <article class="">
-            <main class="flex justify-between items-center">
-                <div class="flex items-center gap-[12px]">
-                    <div class="flex flex-col items-center justify-between gap-[0]">
+            <main class="flex justify-between items-center ">
+                <div class="flex items-center gap-[12px] max-lg:flex-col max-lg:items-start">
+                    <div class="flex flex-col items-center justify-between gap-[0] max-lg:flex-row max-lg:gap-[10px] ">
                         <div class="">
                             <div class="text-[27px] font-bold italic text-white">Flipkart</div>
                         </div>
@@ -23,12 +23,12 @@
                     </div>
 
                     <input type="text" name="" id="" placeholder="Search for products, brands and more"
-                        class=" px-[15px] h-[40px] w-[36.5vw] font-medium">
+                        class=" px-[15px] h-[40px] w-[36.5vw] font-medium max-lg:w-[70vw]">
                 </div>
 
-                <button class="bg-white px-[2.3vw] py-[5px] text-blue-600 font-bold">Login</button>
+                <button class="bg-white px-[2.3vw] py-[5px] text-blue-600 font-bold max-lg:invisible">Login</button>
 
-                <nav class="text-white font-medium text-[19px]">
+                <nav class="text-white font-medium text-[19px] max-lg:invisible">
                     <ul class="flex justify-between items-center gap-[3vw]">
                         <li class=""><a href="#">Become a Seller</a></li>
                         <li class="flex items-center gap-[5px]">
@@ -42,7 +42,7 @@
         </article>
     </header>
 
-    <section class="h-[8vh]">
+    <section class="h-[100px]">
         <article>
             <main>
             </main>
@@ -51,7 +51,7 @@
 
     <section class="px-[5vw] text-center">
         <article>
-            <main class="flex justify-between items-center">
+            <main class="flex justify-between items-center max-lg:overflow-scroll">
                 <div class="p-[10px]">
                     <img class="h-[80px]" src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/47e5c31ef7dcce1e.png?q=100" alt="">
                     <p class="font-bold">Top Offers</p>
@@ -523,10 +523,10 @@
             </main>
         </article>
     </section>
-
+    <!-- max-lg:flex-wrap -->
     <footer class="bg-[#172337] px-[5vw] py-[10px] text-white">
         <article>
-            <main class="flex justify-between my-[30px] text-[13px] leading-7">
+            <main class="flex justify-between my-[30px] text-[13px] leading-7 max-lg:flex-wrap">
                 <div>
                     <h5 class="text-[#61646b] text-[14px]">ABOUT</h5>
                     <nav>
@@ -577,8 +577,8 @@
                     </nav>
                 </div>
 
-                <div class="leading-5 border-l-2 border-[#61646b] pl-[30px] h-[165px]">
-                    <h5 class="text-[#61646b] text-[14px] mb-5">Mail Us:</h5>
+                <div class="leading-5 border-l-2 border-[#61646b] pl-[30px] h-[165px] max-lg:border-none max-lg:pl-[0]">
+                    <h5 class="text-[#61646b] text-[14px] mb-5 max-lg:mb-2">Mail Us:</h5>
                     <nav>
                         <ul>
                             <li>Flipkart Internet Private Limited,</li>
@@ -591,7 +591,7 @@
                     </nav>
                 </div>
                 <div class="leading-5">
-                    <h5 class="text-[#61646b] text-[14px] mb-5">Registered Office Address</h5>
+                    <h5 class="text-[#61646b] text-[14px] mb-5 max-lg:mb-2">Registered Office Address</h5>
                     <nav>
                         <ul>
                             <li>Flipkart Internet Private Limited,</li>
@@ -611,7 +611,7 @@
 
     <footer class="bg-[#172337] px-[5vw] py-[15px] text-white border-t-2 border-[#61646b]">
         <article class="py-[12px]">
-            <main class="flex justify-between items-center">
+            <main class="flex justify-between items-center max-lg:flex-wrap gap-[10px]">
                 <div class="flex gap-[0.5vw]">
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K"
                         alt="">
